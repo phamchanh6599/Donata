@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!---- Using for FONT ICON -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
 
-    <script src="js/vue.min.js" ></script>
 </head>
 <body>
     <div id="container">
@@ -57,7 +57,7 @@
             </div>
         </header>
 
-        <section id="section-1">
+        <section id="section-1" class="wow slideInLeft" data-wow-duration="2s">
             <div class="section-1-content-text">
                 <span class="style-text-1">
                     EVENTS
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <section id="section-collection">
+        <section id="section-collection" class="wow slideInRight" data-wow-duration="3s">
             <div class="container-collection">
                 <div class="collection-title">
                     <span class="collection-small-title"> Collection * 01 </span>
@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <section id="section-collection-2">
+        <section id="section-collection-2" class="wow bounceIn" data-wow-duration="2s">
             <div class="container-collection">
                 <div class="collection-title">
                     <span class="collection-small-title"> Collection * 02 </span>
@@ -114,7 +114,7 @@
             </div>
         </section>
 
-        <section id="section-collection-3">
+        <section id="section-collection-3" class="wow bounceInUp" data-wow-duration="4s">
             <div class="container-collection">
                 <div class="collection-title">
                     <span class="collection-small-title"> Collection * 03 </span>
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section id="section-slider">
+        <section id="section-slider" class="wow fadeInRight" data-wow-duration="3s">
             <div class="container-collection">
                 <div class="collection-title">
                     <span class="collection-small-title"> Collection </span>
@@ -162,7 +162,7 @@
         </section>
 
         <!-- FOOTER  -->
-        <footer>
+        <footer class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="15">
             <div class="footer-1">
                 <div class="f1-content">
                     <div class="title-1"> #DONATALIFESTYLE </div>
@@ -236,6 +236,9 @@
             </div>
         </footer>
     </div>
-    <script src="js/donata.js"></script>
+
+    <script src="js/vue.min.js" ></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/donata.js"></script>
 </body>
 </html>

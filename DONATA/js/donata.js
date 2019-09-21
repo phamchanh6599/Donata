@@ -9,6 +9,7 @@ new Vue({
     created: function() {
         this.firstImg = this.imgSlider[0];
         this.secondImg = this.imgSlider[1];
+        new WOW().init();
     },
     watch: {
 
