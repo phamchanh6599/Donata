@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon/conceptual@3x.png" />
+    <title>DONATA</title>
+
+    <!-- Link css file  -->
+    <link rel="stylesheet" href="/Donata/css/bootstrap.min.css"> <!---- Using for FONT ICON -->
+    <link rel="stylesheet" href="/Donata/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Donata/css/animate.min.css">
+
+</head>
+<body>
+    <div id="container">
+        <header id="conainer-header">
+            <!-- MENU DESKTOP  -->
+            <div class="menu-desktop">
+                <div class="menu-element-desktop">
+                    <span class="nav-style"> NEW </span>
+                    <span class="nav-style"> DINNING </span>
+                    <span class="nav-style"> LIVING </span>
+                </div>
+                <div class="logo">
+                    <img src="./images/icon/full@3x.png" alt="LOGO" />
+                </div>
+                <div class="menu-element-desktop">
+                    <span class="nav-style"> BEDROOM </span>
+                    <span class="nav-style"> STORAGE </span>
+                    <span class="nav-style"> BAR </span>
+                </div>
+            </div>
+
+            <!-- MENU MOBILE  -->
+            <div class="menu-mobile">
+                <div class="logo">
+                    <img src="./images/icon/full@3x.png" alt="LOGO" />
+                </div>
+                <div class="bar">
+                    <span @click="toggle()" v-show="!isMenuOpen"> <img src="images/icon/x-icon.png" /> </span>
+                    <span @click="toggle()" v-show="isMenuOpen"> <img src="images/icon/menu@3x.png" /> </span>
+                </div>
+                <div class="menu-element-mobile" v-bind:class="{'openMenu': !isMenuOpen, 'closedMenu': isMenuOpen}">
+                    <span class="nav-style"> NEW </span>
+                    <span class="nav-style"> DINNING </span>
+                    <span class="nav-style"> LIVING </span>
+                    <span class="nav-style"> BEDROOM </span>
+                    <span class="nav-style"> STORAGE </span>
+                    <span class="nav-style"> BAR </span>
+                </div>
+            </div>
+            <div class="title-header">
+                <span class="title-1"> Lifestyle Without Borders </span>
+                <span class="title-2"> Get in touch <img src="images/icon/right-icon.png" /></span>
+            </div>
+        </header>
+
+        <section id="section-1" class="wow slideInLeft" data-wow-duration="2s">
+            <div class="section-1-content-text">
+                <span class="style-text-1">
+                    EVENTS
+                </span>
+            </div>
+            <div class="section-1-bg">
+                <div class="section-1-content">
+                    <div class="d-flex-column">
+                        <span class="title-1"> Donata at vifa 2019 </span>
+                        <span class="style-text-content">
+                            <img src="images/icon/calendar@3x.png" />
+                            March 6-7th 2019
+                        </span>
+                        <span class="style-text-content">
+                            <img src="images/icon/location@3x.png" />
+                            247 Le van luong, quan 10
+                        </span>
+                        <p class="style-text-content-mobile"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper gravida mi sit amet pellen tesque. Sed non purus nulla. </p>
+                    </div>
+                    <div class="d-flex-column">
+                        <div class="section-1-btn">
+                           <span class="btn-arrow"> <i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                           <span class="btn-arrow"> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+                        </div>
+                        <span class="title-2"> Event Details <img src="images/icon/right-icon.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-collection" class="wow slideInRight" data-wow-duration="3s">
+            <div class="container-collection">
+                <div class="collection-title">
+                    <span class="collection-small-title"> Collection * 01 </span>
+                    <span class="title-1"> City sleek </span>
+                </div>
+                <div class="collection-content">
+                    <span class="style-collection-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper gravida mi sit amet pellentesque. Sed non purus nulla…</span>
+                    <span class="title-2"> Event Details <img src="images/icon/right-icon.png" /></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-collection-2" class="wow bounceIn" data-wow-duration="2s">
+            <div class="container-collection">
+                <div class="collection-title">
+                    <span class="collection-small-title"> Collection * 02 </span>
+                    <span class="title-1"> raw modern </span>
+                </div>
+                <div class="collection-content">
+                    <span class="style-collection-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper gravida mi sit amet pellentesque. Sed non purus nulla. Integer commodo ac quam at dapibus. Nam laoreet purus a enim faucibus, a varius lorem laoreet.</span>
+                    <span class="title-2"> Explore <img src="images/icon/right-icon.png" /></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-collection-3" class="wow bounceInUp" data-wow-duration="4s">
+            <div class="container-collection">
+                <div class="collection-title">
+                    <span class="collection-small-title"> Collection * 03 </span>
+                    <span class="title-1"> art modern </span>
+                </div>
+                <div class="collection-content">
+                    <span class="style-collection-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper gravida mi sit amet pellentesque. Sed non purus nulla…</span>
+                    <span class="title-2"> Explore <img src="images/icon/right-icon.png" /></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-slider" class="wow fadeInRight" data-wow-duration="3s">
+            <div class="container-collection">
+                <div class="collection-title">
+                    <span class="collection-small-title"> Collection </span>
+                    <span class="title-1"> Latest Publications </span>
+                </div>
+                <div class="collection-content">
+                    <span class="style-collection-content"> Sed vulputate lorem ut bibendum elementum. Phasellus placerat elit arcu, at imperdiet augue ullamcorper id. Maecenas malesuada leo libero.</span>
+                    <span class="title-2"> View all articles <img src="images/icon/right_2@3x.png" /></span>
+                </div>
+            </div>
+            <div class="collection-slider" v-if="firstImg && secondImg">
+                <div class="slide-img">
+                    <img :src="firstImg" />
+                    <div class="content-img">
+                        <span class="style-collection-content"> Cras ullamcorper gravida mi sit amet pellen tesque. Sed non purus nullanteger commodo ac.</span>
+                        <small> June 20th 2019 </small>
+                    </div>
+                </div>
+                <div class="slide-img none">
+                    <img class="darker" :src="secondImg" />
+                    <span class="btn-arrow" @click="slide('next')"> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+                    <div class="content-img">
+                        <span class="style-collection-content"> Cras ullamcorper gravida mi sit amet pellen tesque. Sed non purus nullanteger commodo ac.</span>
+                        <small> June 20th 2019 </small>
+                    </div>
+                </div>
+                <div class="container-btn-slide">
+                    <span class="btn-slide" @click="slide('back')"> <i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="btn-slide" @click="slide('next')"> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER  -->
+        <footer class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="15">
+            <div class="footer-1">
+                <div class="f1-content">
+                    <div class="title-1"> #DONATALIFESTYLE </div>
+                    <div class="d-flex-column">
+                        <span class="style-collection-content"> Sed vulputate lorem ut bibendum elementum. Phasellus placerat elit arcu, at imperdiet augue ullamcorper id. Maecenas malesuada leo libero. </span>
+                        <div class="icon">
+                           <span class="social-icon">
+                               <img src="images/icon/fb@3x.png" />
+                            </span>
+                            <span class="social-icon">
+                                <img src="images/icon/ig@3x.png" />
+                            </span>
+                            <span class="social-icon">
+                                <img src="images/icon/pin@3x.png" />
+                            </span>
+                            <span class="social-icon">
+                                <img src="images/icon/twitter@3x.png" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE DESKTOP -->
+                <div class="footer-img-desktop" v-if="imgSlider">
+                    <div v-for="img in imgSlider">
+                        <img :src="img" />
+                    </div>
+                </div>
+                <!-- SLIDE MOBILE  -->
+                <div class="footer-img-mobile">
+                    <div class="slide-img" v-if="firstImg">
+                        <img :src="firstImg" />
+                    </div>
+                    <div class="container-btn-slide">
+                        <span class="btn-slide" @click="slide('back')"> <i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="btn-slide" @click="slide('next')"> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-2">
+                <div class="f2-content">
+                    <div class="f2-content-1">
+                        <img src="images/icon/full@3x.png" />
+                    </div>
+                    <div class="f2-content-2">
+                        <div class="f2-element-content">
+                            <b> Contact </b>
+                            <p class="f2-style-content">
+                                +849324213213 malene@donata.com www.donata.com
+                            </p>
+                        </div>
+                        <div class="f2-element-content">
+                            <b> Address </b>
+                            <p class="f2-style-content">
+                                198C1 Nguyen Van Huong, Thao Dien, District 2, Ho Chi Minh City
+                            </p>
+                        </div>
+                        <div class="f2-element-content">
+                            <b> working time </b>
+                            <p class="f2-style-content">
+                                Monday to Friday
+                                (9AM to 5PM). By appointment only Please call our office to make an appointment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="f2-introduce">
+                    <span> © 2019 Donata Inc.</span>
+                    <span> Website by <img src="images/icon/conceptual@3x.png" /> </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./Donata/js/vue.min.js" ></script>
+    <script src="./Donata/js/wow.min.js"></script>
+    <script src="./Donata/js/donata.js"></script>
+</body>
+</html>
