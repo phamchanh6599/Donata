@@ -2,7 +2,7 @@ new Vue({
     el: '#container',
     data: {
         isMenuOpen: true,
-        imgSlider: ['./images/slider/slider-1.jpg', './images/slider/slider-2.jpg', './images/slider/slider-3.jpg'],
+        imgSlider: ['./../images/slider/slider-1.jpg', './../images/slider/slider-2.jpg', './../images/slider/slider-3.jpg'],
         firstImg: undefined,
         secondImg: undefined
     },
